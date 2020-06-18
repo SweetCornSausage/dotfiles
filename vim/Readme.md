@@ -1,3 +1,4 @@
-# 前言
-自用vim配置
-
+# 使用
+```vim
+source /path/to/init.vim
+```
