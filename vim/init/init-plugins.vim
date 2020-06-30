@@ -34,7 +34,8 @@ endfunc
 "----------------------------------------------------------------------
 " 在 ~/.vim/bundles 下安装插件
 "----------------------------------------------------------------------
-call plug#begin(get(g:, 'bundle_home', expand(s:home . '/../plugged')))
+" call plug#begin(get(g:, 'bundle_home', expand(s:home . '/../plugged')))
+call plug#begin(get(g:, 'bundle_home', '~/.vim/plugged'))
 
 "----------------------------------------------------------------------
 " 基础插件 basic
@@ -42,7 +43,7 @@ call plug#begin(get(g:, 'bundle_home', expand(s:home . '/../plugged')))
 if index(g:bundle_group, 'basic') >= 0
 
 	Plug 'yianwillis/vimcdoc'
-	
+
 	" 额外的按键映射
 	Plug 'tpope/vim-unimpaired'
 

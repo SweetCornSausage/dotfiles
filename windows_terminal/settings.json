@@ -34,7 +34,7 @@
             {
                 // Make changes here to the powershell.exe profile.
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "name": "Windows PowerShell",
+                "name": "PowerShell",
                 "startingDirectory": "C:/Users/zhenl/",
                 "commandline": "powershell.exe",
                 "hidden": false
@@ -45,26 +45,56 @@
                 "name": "CMD",
                 "startingDirectory": "C:/Users/zhenl/",
                 "commandline": "cmd.exe",
-                "hidden": false
-            },
-            {
-                "guid": "{15b79c30-8a4a-5639-b4fc-66e8442c8bb6}",
-                "hidden": false,
-                "name": "WSL",
-                "commandline": "wsl"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "hidden": true
             },
             {
                 "guid": "{07fbf588-8d02-497e-8189-7aabf205bf0c}",
                 "hidden": false,
-                "name": "Manjaro",
+                "name": "Manjaro-wsl",
+                "icon": "C:/Users/zhenl/Pictures/ico/Papirus-Team-Papirus-Apps-Manjaro-welcome.ico",
+                "startingDirectory": "//wsl$/manjaro/home/zhenl",
+                "commandline": "wsl -d manjaro"
+            },
+            {
+                "guid": "{8bce43e4-adca-4662-9286-7c70b35502d2}",
+                "hidden": false,
+                "name": "Aliyun",
+                "icon": "C:/Users/zhenl/Pictures/ico/cof_orange_hex.png",
                 "startingDirectory": "C:/Users/zhenl/",
-                "commandline": "wsl -d Manjaro"
+                "commandline": "ssh root@123.57.181.98"
+            },
+            {
+                "guid": "{0499f8e2-ca65-44b7-8c0f-c0b1f3c1b80b}",
+                "hidden": false,
+                "name": "node0-vm",
+                "icon": "C:/Users/zhenl/Pictures/ico/system-logo-icon.png",
+                "commandline": "ssh root@192.168.119.200"
+            },
+            {
+                "guid": "{8d9f2b4a-09d3-4d8f-a7eb-18003cd1672d}",
+                "hidden": false,
+                "name": "node1-vm",
+                "icon": "C:/Users/zhenl/Pictures/ico/system-logo-icon.png",
+                "commandline": "ssh root@192.168.119.201"
+            },
+            {
+                "guid": "{b233f37e-add6-447b-9ed4-95c73e7fec3e}",
+                "hidden": false,
+                "name": "node2-vm",
+                "icon": "C:/Users/zhenl/Pictures/ico/system-logo-icon.png",
+                "commandline": "ssh root@192.168.119.202"
+            },
+            {
+                "guid": "{d35dcf6a-3a52-5105-88b5-65b0fc08bbf6}",
+                "hidden": true,
+                "name": "manjaro-wsl",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
             }
         ]
     },

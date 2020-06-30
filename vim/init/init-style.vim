@@ -93,7 +93,7 @@ endif
 hi! SignColumn guibg=NONE ctermbg=NONE
 
 " 修改行号为浅灰色，默认主题的黄色行号很难看，换主题可以仿照修改
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 	\ gui=NONE guifg=DarkGrey guibg=NONE
 
 " 修正补全目录的色彩：默认太难看
@@ -162,7 +162,7 @@ function! Vim_NeatBuffer(bufnr, fullname)
 		if l:name == ''
 			return '[No Name]'
 		else
-			if a:fullname 
+			if a:fullname
 				return fnamemodify(l:name, ':p')
 			else
 				let aname = fnamemodify(l:name, ':p')
@@ -181,7 +181,7 @@ function! Vim_NeatBuffer(bufnr, fullname)
 		if l:buftype == 'quickfix'
 			return '[Quickfix]'
 		elseif l:name != ''
-			if a:fullname 
+			if a:fullname
 				return '-'.fnamemodify(l:name, ':p')
 			else
 				return '-'.fnamemodify(l:name, ':t')
