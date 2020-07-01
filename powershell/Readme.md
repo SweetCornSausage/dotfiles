@@ -12,6 +12,7 @@ Set-ExecutionPolicy Unrestricted
 ```ps1
 $PROFILE
 # ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+New-Item -ItemType file -Path $PROFILE  -Force
 ```
 ## utf-8编码
 ```ps1
